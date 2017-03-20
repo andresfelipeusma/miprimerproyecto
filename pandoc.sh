@@ -1,9 +1,9 @@
 #!/bin/sh
 
-pandoc --output=docker.xhtml \
-  --standalone \
-  README_PROVA.md
+pandoc --output=README.xhtml \
+	--standalone \
+	README.md
 
-xmllint --noout --valid docker.xhtml 
+xmllint --noout --valid README.xhtml 
 
 # vim:ts=4:sw=4:et:ai
