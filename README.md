@@ -1,6 +1,6 @@
-## Synopsis
+## README
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+En aquest GITHUB publicaré tot alló relacionat amb l'assignatura mp9, está sincronitzat amb el meu GITLAB també.
 
 ## Code Example
 
