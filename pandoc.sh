@@ -1,8 +1,8 @@
 #!/bin/sh
 
 pandoc --output=docker.xhtml \
---standalone \
-README_PROVA.md
+  --standalone \
+  README_PROVA.md
 
 xmllint --noout --valid docker.xhtml 
 
