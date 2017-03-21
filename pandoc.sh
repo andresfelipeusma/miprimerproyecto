@@ -1,13 +1,33 @@
 #!/bin/sh
 
 pandoc \
-	--output=README.xhtml \
+	--output=attach.html \
 	--standalone \
 	--template=template.html\
-	README.md
+	attach.md
+	
+pandoc \
+	--output=build.html \
+	--standalone \
+	--template=template.html\
+	build.md
+	
+pandoc \
+	--output=cli.html \
+	--standalone \
+	--template=template.html\
+	cli.md
 
 xmllint \
 	--noout \
-	--valid README.xhtml 
+	--valid attach.html
+
+xmllint \
+	--noout \
+	--valid build.html
+
+xmllint \
+	--noout \
+	--valid cli.html
 
 # vim:ts=4:sw=4:et:ai
