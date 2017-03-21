@@ -1,9 +1,13 @@
 #!/bin/sh
 
-pandoc --output=/var/tmp/pandocfiles/README.xhtml \
+pandoc \
+	--output=README.xhtml \
 	--standalone \
+	--template=template.html\
 	README.md
 
-xmllint --noout --valid /var/tmp/pandocfiles/README.xhtml 
+xmllint \
+	--noout \
+	--valid README.xhtml 
 
 # vim:ts=4:sw=4:et:ai
